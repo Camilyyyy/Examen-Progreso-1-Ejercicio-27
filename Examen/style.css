@@ -94,4 +94,167 @@ li{
     color:rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif; 
 }
+.imagen--principal{
+    width: 60rem;
+    height: 40rem; 
+    margin: auto;
+    margin-top: 3%;
+}
+.section--primer--grid{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -4%;
+}
+.section--div--date{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 0.5%;
+    align-items:center;
+    justify-content: center;
+    margin-right:46%;
+}
+.section--div--p{
+    color: #ff4747;
+}
+.section--div--pp{
+    color: #343333;
+
+}
+.section--picture--imagenes{
+    display: flex;
+    width: auto;
+    height: auto; 
+    margin-top: 3%;
+    gap: 2%;
+    align-items:center;
+    justify-content: center;
+}
+.section--picture--uno{
+    width: 30rem;
+    height: 15rem; 
+    border-radius: 0.5rem; 
+}
+.section--div--pieUno{
+    display: flex;
+    align-items: center;
+    gap: 0.5%;
+}
+.section--picture--div--principal{
+    display: flex;
+    gap: 2%;
+    align-items:center;
+    justify-content: center;
+}
+.section--div--content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #5f5f5f;
+}
+.section--div--contentUno{
+    text-align: center;
+    width: 100%;
+}
+.section--div--cuadrado{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #b3b3b3;
+    border-radius: 0.5rem;
+    max-width: 1000px;
+    margin: 2rem auto 0 auto;
+    padding: 0.6rem;
+    margin-top: 1%;
+}
+.section--down--parrafo{
+    align-items:center;
+    justify-content: center;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 2%;
+    color: #5f5f5f;
+}
+.section--cuadrado--redes{
+    display: flex;
+    border: 1px solid #b3b3b3;
+    border-radius: 0.5rem;
+    max-width: 1000px;
+    margin: 2rem auto 0 auto;
+    padding: 0rem;
+    margin-top: 1%;
+    gap: 34.5%;
+}
+.section--lista--uno{
+    display: flex;
+    gap: 3%;
+}
+.section--lista--dos{
+    display: flex;
+    gap: 6%;
+
+}
+.section--down--lista--uno--config{
+    display: flex;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    border-radius: 0.3rem;
+    text-align: center;
+    padding: 5px 30px;
+}
+.section--down--lista--dos--config{
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 0.3rem;
+    text-align: center;
+    padding: 5px 10px;
+}
+.section--botones--abajo{
+    display: flex;
+    justify-content: center;
+}
+.section--botones--letras{
+    display: flex;
+    width: 5rem;
+    height: 2rem;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    text-align: center;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.section--botones--numero--Uno{
+    display: flex;
+    width: 1rem;
+    height: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: #ff4747;
+    border: 1px solid #ff4747;
+    text-align: center;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+}
+.section--botones--numeros{
+    display: flex;
+    width: 1rem;
+    height: 2rem;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    text-align: center;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+}
+
+
 
