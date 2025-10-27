@@ -83,3 +83,15 @@ li{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.nav--tercera--seccion{
+    display: flex;
+    background-color: #ff4747;
+    margin-top: -2.5%;
+    gap: 82%;
+}
+
+.nav--tercera--seccion--texto{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
