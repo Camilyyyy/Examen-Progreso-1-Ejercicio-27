@@ -1,14 +1,17 @@
-main{
+main {
     display: grid;
-    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+}
+li{
+    list-style: none;
 }
 
-nav{
+.header {
     display: flex;
     flex-direction: column;
 }
 
-.nav--primera--seccion{
+.header__section--primary {
     display: flex;
     gap: 5%;
     justify-content: center;
@@ -16,39 +19,38 @@ nav{
     box-shadow: rgb(183, 183, 183) 0px 4px 4px -2px;
 }
 
-.nav--imagen{
+.header__icon {
     width: 1rem;
     height: 1rem;
 }
 
-
-li{
+.header__item {
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.nav--li--menu{
-   margin-right: auto;
+.header__item--menu {
+    margin-right: auto;
 }
 
-.nav--li--phone
-{
+.header__item--phone {
     margin-left: auto;
     margin-right: 3%;
 }
-.nav--segSeccion--imagen{
+
+.header__logo {
     width: 7rem;
-    height: 7rem;   
+    height: 7rem;
 }
 
-.nav--segunda--seccion{
+.header__section--secondary {
     display: flex;
     gap: 22%;
     margin-top: -2.5%;
 }
 
-.nav--segSeccion--boton--lupa{
+.header__search-button {
     background-color: #ff4747;
     border-width: 0px;
     border-top-right-radius: 9%;
@@ -57,7 +59,7 @@ li{
     height: 29%;
 }
 
-.nav--segSeccion--select{
+.header__search-select {
     border-radius: 0%;
     border: #57af79 solid 1px;
     width: 60%;
@@ -65,7 +67,7 @@ li{
     border-right: none;
 }
 
-.nav--segSeccion--input{
+.header__search-input {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     border-left: 6%;
@@ -75,7 +77,7 @@ li{
     border-right: none;
 }
 
-.nav--segSeccion-itemIcons{
+.header__user-options {
     display: flex;
     gap: 16%;
     margin-left: auto;
@@ -83,71 +85,79 @@ li{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav--tercera--seccion{
+.header__section--tertiary {
     display: flex;
     background-color: #ff4747;
     margin-top: -2.5%;
     gap: 82%;
 }
 
-.nav--tercera--seccion--texto{
-    color:rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif; 
+.header__tertiary-text {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
 }
-.imagen--principal{
+
+.main-content__image {
     width: 60rem;
-    height: 40rem; 
+    height: 40rem;
     margin: auto;
     margin-top: 3%;
 }
-.section--primer--grid{
-    font-family: Arial, Helvetica, sans-serif;
 
+.blog-post {
+    font-family: Arial, Helvetica, sans-serif;
 }
-.section--div--date{
+
+.blog-post__meta {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     gap: 0.5%;
-    align-items:center;
+    align-items: center;
     justify-content: center;
-    margin-right:46%;
+    margin-right: 46%;
 }
-.section--div--p{
+
+.blog-post__meta-text {
+    color: #343333;
+}
+
+.blog-post__meta-text--highlight {
     color: #ff4747;
 }
-.section--div--pp{
-    color: #343333;
 
-}
-.section--picture--imagenes{
+.blog-post__image-gallery {
     display: flex;
     width: auto;
-    height: auto; 
+    height: auto;
     margin-top: 3%;
     gap: 2%;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
-.section--picture--uno{
+
+.blog-post__gallery-image {
     width: 30rem;
-    height: 15rem; 
-    border-radius: 0.5rem; 
+    height: 15rem;
+    border-radius: 0.5rem;
 }
-.section--div--pieUno{
+
+.blog-post__caption {
     display: flex;
     align-items: center;
     gap: 0.5%;
 }
-.section--picture--div--principal{
+
+.blog-post__image-captions {
     display: flex;
     gap: 2%;
-    align-items:center;
+    align-items: center;
     justify-content: center;
 }
-.section--div--content{
+
+.blog-post__content {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     text-align: left;
     max-width: 1000px;
@@ -155,11 +165,13 @@ li{
     padding: 0 20px;
     color: #5f5f5f;
 }
-.section--div--contentUno{
+
+.blog-post__header {
     text-align: center;
     width: 100%;
 }
-.section--div--cuadrado{
+
+.blog-post__quote {
     display: flex;
     flex-direction: column;
     border: 1px solid #a8a6a6;
@@ -169,8 +181,9 @@ li{
     padding: 0.6rem;
     margin-top: 1%;
 }
-.section--down--parrafo{
-    align-items:center;
+
+.blog-post__additional-content {
+    align-items: center;
     justify-content: center;
     text-align: left;
     max-width: 1000px;
@@ -179,7 +192,8 @@ li{
     margin-top: 2%;
     color: #5f5f5f;
 }
-.section--cuadrado--redes{
+
+.blog-post__footer {
     display: flex;
     border: 1px solid #a8a6a6;
     border-radius: 0.5rem;
@@ -189,16 +203,23 @@ li{
     margin-top: 1%;
     gap: 34.5%;
 }
-.section--lista--uno{
+
+.blog-post__tags {
     display: flex;
     gap: 3%;
 }
-.section--lista--dos{
+
+.blog-post__social-share {
     display: flex;
     gap: 6%;
-
+    text-align: center;
+    padding: 5px 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  
 }
-.section--down--lista--uno--config{
+
+.blog-post__tag {
     display: flex;
     color: #a8a6a6;
     border: 1px solid #a8a6a6;
@@ -206,7 +227,8 @@ li{
     text-align: center;
     padding: 5px 30px;
 }
-.section--down--lista--dos--config{
+
+.blog-post__social-icon {
     display: flex;
     width: 1rem;
     height: 1rem;
@@ -215,108 +237,97 @@ li{
     text-align: center;
     padding: 5px 10px;
 }
-.section--botones--abajo{
+
+.pagination {
     display: flex;
     justify-content: center;
 }
-.section--botones--letras{
+
+.pagination__button {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.pagination__button--text {
     width: 5rem;
     height: 2rem;
     color: #a8a6a6;
     border: 1px solid #a8a6a6;
-    text-align: center;
-    padding: 5px 10px;
-    justify-content: center;
-    align-items: center;
 }
-.section--botones--numero--Uno{
-    display: flex;
-    width: 1rem;
-    height: 2rem;
-    color: rgb(255, 255, 255);
-    background-color: #ff4747;
-    border: 1px solid #ff4747;
-    text-align: center;
-    padding: 5px 10px;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-}
-.section--botones--numeros{
-    display: flex;
+
+.pagination__button--number {
     width: 1rem;
     height: 2rem;
     color: #a8a6a6;
     border: 1px solid #a8a6a6;
-    text-align: center;
-    padding: 5px 10px;
-    justify-content: center;
-    align-items: center;
     border-right: none;
 }
-.section--dos--columnas{
+
+.pagination__button--active {
+    color: rgb(255, 255, 255);
+    background-color: #ff4747;
+    border: 1px solid #ff4747;
+}
+
+.site-footer__main {
     display: flex;
     justify-content: space-evenly;
     gap: 3rem;
-    
 }
 
-.section--dos--columna--izquierda{
+.site-footer__column--about {
     display: flex;
     flex-direction: column;
 }
 
-
-
-.section--lista--redes{
+.site-footer__social-links {
     display: flex;
     gap: 2%;
     text-align: left;
     padding: 5px 10px;
 }
-.section--logo{
+
+.site-footer__logo {
     width: 10rem;
     height: 10rem;
 }
-.section--dos--parrafo{
+
+.site-footer__description {
     margin-top: -3rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #a8a6a6;
 }
-.section--dos--columna--dos{
+
+.site-footer__column--company,
+.site-footer__column--category,
+.site-footer__column--subscribe {
     font-family: Arial, Helvetica, sans-serif;
     color: #a8a6a6;
     margin-top: 3rem;
 }
-.section--dos--columna--tres{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #a8a6a6;
-    margin-top: 3rem;
-}
-.section--dos--columna--cuatro{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #a8a6a6;
-    margin-top: 3rem;
-}
-.section--dos--columna--cuatro--input{
+
+.site-footer__subscribe-input {
     width: 17rem;
     height: 1rem;
     border: solid 1px #a8a6a6;
-    border-radius: 8%;
     border-radius: 0.3rem;
     text-align: left;
     padding: 5px 10px;
 }
-.section--dos--estilo--letras{
+
+.site-footer__contact-info {
     font-family: Arial, Helvetica, sans-serif;
     color: #a8a6a6;
 }
+
 .site-footer__copyright {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid #E2E2E2;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
 
